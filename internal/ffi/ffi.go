@@ -8,7 +8,7 @@ package ffi
 // #cgo linux,arm64 LDFLAGS: ${SRCDIR}/native/linux/arm64/libpolar.a -ldl -lm
 // #cgo darwin,amd64 LDFLAGS: ${SRCDIR}/native/macos/amd64/libpolar.a -ldl -lm
 // #cgo darwin,arm64 LDFLAGS: ${SRCDIR}/native/macos/arm64/libpolar.a -ldl -lm
-// #cgo windows,amd64 LDFLAGS: ${SRCDIR}/native/windows/libpolar.a -lm -lws2_32 -luserenv -lbcrypt
+// #cgo windows,amd64 LDFLAGS: ${SRCDIR}/native/windows/libpolar.a -lm -lws2_32 -luserenv -lbcrypt -lkernel32 -ladvapi32 -lntdll
 import "C"
 
 import (
